@@ -156,7 +156,6 @@ class Main extends java.Program{
         const e = new java.List<number>();
         e.add(1);
         e.add(2);
-        e.
         return java.STATUS.SUCCESS;
     }
 }
