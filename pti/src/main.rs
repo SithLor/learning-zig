@@ -7,8 +7,8 @@ const WIDTH: usize = 20;
 const HEIGHT: usize = 20;
 const ALIVE: [u8; 3] = [0, 0, 0]; // Black for alive cells
 const DEAD: [u8; 3] = [255, 255, 255]; // White for dead cells
-const REFRESH_RATE: u64 = 500;
-const OUTPUT_DIR: &str = "output/";
+const REFRESH_RATE: u64 = 0;
+const OUTPUT_DIR: &str = "./images/";
 const MAX_GENERATIONS: usize = 10;
 
 fn main() {
@@ -21,6 +21,7 @@ fn main() {
             grid[i][j] = rng.gen();
         }
     }
+    std::fs::create_dir_all(OUTPUT_DIR).expect("Failed to create output directory");
 
     let mut generation = 0;
     while generation < MAX_GENERATIONS  {

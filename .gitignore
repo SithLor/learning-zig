@@ -56,4 +56,4 @@ zig
 **/*.timestamp
 
 **/target/*
-
+./pti/images
