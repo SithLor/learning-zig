@@ -57,3 +57,5 @@ zig
 
 **/target/*
 ./pti/images
+
+./java/*

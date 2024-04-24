@@ -148,14 +148,17 @@ namespace java {
     }
 }
 // Java like api for typescript development
+
 class Main extends java.Program{
+    // INGORE //
     constructor(){super();}
+    // INGORE //
     public main(): java.STATUS{
         console.log('Hello World');
         const e = new java.List<number>();
         e.add(1);
         e.add(2);
-        return java.STATUS.SUCCESS;
+        return java.STATUS.FAILED;
     }
 }
 
